@@ -37,8 +37,8 @@
     </section>
     <section id="como-funciona">
         <h2>¿Cómo funciona?</h2>
-        <p>Pagas en nuestra tienda ➝ Nosotros compramos automáticamente al mejor precio disponible ➝ Recibes tu ítem directamente en tu cuenta.</p>
-        <p>Todo protegido con pagos seguros y garantía BrainVault.</p>
+        <p>Pagas en nuestra tienda ➝ Nosotros compramos manualmente en el proveedor más barato ➝ Recibes tu ítem directamente en tu cuenta.</p>
+        <p>Pagos seguros con Stripe y garantía BrainVault.</p>
     </section>
     <section id="faq">
         <h2>Preguntas Frecuentes</h2>
@@ -52,12 +52,6 @@
         <p>Contacto: <a href="mailto:brainvault.shop@gmail.com">brainvault.shop@gmail.com</a></p>
         <p>© 2025 BrainVault. Todos los derechos reservados.</p>
     </footer>
-    <script>
-        const stripe = Stripe('pk_test_TU_CLAVE_PUBLICA_STRIPE'); // Clave pública de prueba Stripe
-
-        function checkout(item) {
-            alert('Simulación de compra: ' + item + '\nEn producción: esto abrirá el checkout real de Stripe.');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
