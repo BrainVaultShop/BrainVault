@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainVault - Ítems de Steal a Brainrot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="BrainVault Logo" class="logo">
+        <h1>BrainVault</h1>
+        <p>Consigue ítems de Steal a Brainrot al mejor precio, 100% seguro</p>
+    </header>
+    <section id="catalogo">
+        <h2>Catálogo</h2>
+        <div class="item">
+            <img src="img/garama.png" alt="Garama and Madundung">
+            <h3>Garama and Madundung</h3>
+            <p class="precio">$25 (precio de mercado)</p>
+            <button onclick="checkout('Garama and Madundung')">Comprar</button>
+        </div>
+        <div class="item">
+            <img src="img/gran-combinacion.png" alt="La Gran Combinación">
+            <h3>La Gran Combinación</h3>
+            <p class="precio">$30 (precio de mercado)</p>
+            <button onclick="checkout('La Gran Combinación')">Comprar</button>
+        </div>
+        <div class="item">
+            <img src="img/dragon.png" alt="Dragon Cannelloni">
+            <h3>Dragon Cannelloni</h3>
+            <p class="precio">$40 (precio de mercado)</p>
+            <button onclick="checkout('Dragon Cannelloni')">Comprar</button>
+        </div>
+    </section>
+    <section id="como-funciona">
+        <h2>¿Cómo funciona?</h2>
+        <p>Pagas en nuestra tienda ➝ Nosotros compramos automáticamente al mejor precio disponible ➝ Recibes tu ítem directamente en tu cuenta.</p>
+        <p>Todo protegido con pagos seguros y garantía BrainVault.</p>
+    </section>
+    <section id="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <ul>
+            <li><strong>¿Es seguro?</strong> Sí, usamos Stripe y proveedores verificados.</li>
+            <li><strong>¿Qué pasa si no recibo el ítem?</strong> Garantía de reembolso completo.</li>
+            <li><strong>¿Cuánto tarda?</strong> En promedio menos de 30 minutos.</li>
+        </ul>
+    </section>
+    <footer>
+        <p>Contacto: <a href="mailto:brainvault.shop@gmail.com">brainvault.shop@gmail.com</a></p>
+        <p>© 2025 BrainVault. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        const stripe = Stripe('pk_test_TU_CLAVE_PUBLICA_STRIPE'); // Clave pública de prueba Stripe
+
+        function checkout(item) {
+            alert('Simulación de compra: ' + item + '\nEn producción: esto abrirá el checkout real de Stripe.');
+        }
+    </script>
+</body>
+</html>
