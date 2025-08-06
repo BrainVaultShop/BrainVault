@@ -6,52 +6,48 @@
     <title>BrainVault - Ítems de Steal a Brainrot</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="BrainVault Logo" class="logo">
+    <header class="hero">
+        <img src="img/logo.png" alt="BrainVault Logo" class="hero-logo">
         <h1>BrainVault</h1>
-        <p>Consigue ítems de Steal a Brainrot al mejor precio, 100% seguro</p>
+        <p class="slogan">Compra segura de ítems de Steal a Brainrot</p>
+        <a href="#catalogo" class="btn-hero">Ver Catálogo</a>
     </header>
-    <section id="catalogo">
-        <h2>Catálogo</h2>
-        <div class="item">
-            <img src="img/garama.png" alt="Garama and Madundung">
-            <h3>Garama and Madundung</h3>
-            <p class="precio">$25 (precio de mercado)</p>
-            <button onclick="checkout('Garama and Madundung')">Comprar</button>
-        </div>
-        <div class="item">
-            <img src="img/gran-combinacion.png" alt="La Gran Combinación">
-            <h3>La Gran Combinación</h3>
-            <p class="precio">$30 (precio de mercado)</p>
-            <button onclick="checkout('La Gran Combinación')">Comprar</button>
-        </div>
-        <div class="item">
-            <img src="img/dragon.png" alt="Dragon Cannelloni">
-            <h3>Dragon Cannelloni</h3>
-            <p class="precio">$40 (precio de mercado)</p>
-            <button onclick="checkout('Dragon Cannelloni')">Comprar</button>
+    <section id="catalogo" class="catalogo">
+        <h2>Catálogo de Ítems</h2>
+        <div class="items">
+            <div class="item">
+                <img src="img/garama.jpg" alt="Garama and Madundung">
+                <h3>Garama and Madundung</h3>
+                <p class="precio">$25 (precio de mercado)</p>
+                <button onclick="checkout('Garama and Madundung')">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="img/gran-combinacion.png" alt="La Gran Combinación">
+                <h3>La Gran Combinación</h3>
+                <p class="precio">$30 (precio de mercado)</p>
+                <button onclick="checkout('La Gran Combinación')">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="img/dragon.png" alt="Dragon Cannelloni">
+                <h3>Dragon Cannelloni</h3>
+                <p class="precio">$40 (precio de mercado)</p>
+                <button onclick="checkout('Dragon Cannelloni')">Comprar</button>
+            </div>
         </div>
     </section>
-    <section id="como-funciona">
-        <h2>¿Cómo funciona?</h2>
-        <p>Pagas en nuestra tienda ➝ Nosotros compramos manualmente en el proveedor más barato ➝ Recibes tu ítem directamente en tu cuenta.</p>
-        <p>Pagos seguros con Stripe y garantía BrainVault.</p>
-    </section>
-    <section id="faq">
-        <h2>Preguntas Frecuentes</h2>
-        <ul>
-            <li><strong>¿Es seguro?</strong> Sí, usamos Stripe y proveedores verificados.</li>
-            <li><strong>¿Qué pasa si no recibo el ítem?</strong> Garantía de reembolso completo.</li>
-            <li><strong>¿Cuánto tarda?</strong> En promedio menos de 30 minutos.</li>
-        </ul>
+    <section id="confianza" class="confianza">
+        <h2>Compra con confianza</h2>
+        <p>Compra segura con proveedores verificados ➝ Pedido gestionado al instante ➝ Entrega directa en tu cuenta de juego sin riesgos.</p>
     </section>
     <footer>
         <p>Contacto: <a href="mailto:brainvault.shop@gmail.com">brainvault.shop@gmail.com</a></p>
         <p>© 2025 BrainVault. Todos los derechos reservados.</p>
     </footer>
+    <a href="mailto:brainvault.shop@gmail.com" class="contacto-btn">📧 Contáctanos</a>
     <script src="script.js"></script>
 </body>
 </html>
